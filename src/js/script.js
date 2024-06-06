@@ -57,9 +57,9 @@ const html = `
           </div> 
         </div>
       </div> 
-`
+`;
 
-foodContainer.insertAdjacentHtml("beforeend", html);
+foodContainer.insertAdjacentElement("beforeend", html);
 
 
 
