@@ -27,7 +27,7 @@ console.log(data);
 const foodContainer = document.querySelector(".foodContainer");
 
 const html = `
-         <!-- <div class="food-card">
+         <div class="food-card">
         <div class="food-title">
           <img
             alt="Rajab Restaurant"
@@ -56,7 +56,7 @@ const html = `
             </a>
           </div> 
         </div>
-      </div> -->
+      </div> 
 `
 
 foodContainer.insertAdjacentHtml("beforeend", html);
