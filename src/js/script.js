@@ -21,7 +21,7 @@ async function getfoods(){
    getfoods();
    
   
-console.log(data);
+console.log(data); 
 
 
 const foodContainer = document.querySelector(".foodContainer");
