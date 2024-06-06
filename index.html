@@ -1,13 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/sass/style.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="src/sass/style.scss" rel="stylesheet" />
     <script type="module" src="src/js/script.js"></script>
-</head>
-<body>
-    <h1>This is a  test header</h1>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurant Menu</h1>
+      <div class="tabs">
+        <button class="tab" data-category="Pizzas">Pizzas</button>
+        <button class="tab" data-category="Burgers">Burgers</button>
+        <button class="tab" data-category="Drinks">Drinks</button>
+      </div>
+
+      <div id="food-container" class="food-container">
+         <!-- <div class="food-card">
+        <div class="food-title">
+          <img
+            alt="Rajab Restaurant"
+            src="./src/assets/img/pizza1.png"
+            class="food-img"
+          />
+          
+          <div class="food-descriptions">
+            <h4 class = "name">Italy Pizza</h4>
+          <div class="food-price">
+            <span class = "price">$ 12.99</span>
+          </div>
+           <div class="food-ingredients">
+            <span class ="ingredients">Extra cheese and toping</span>
+            </div>
+          </div>
+        </div>
+        <div class="food-qty">
+          <span class="qty">1</span>
+          <div class="buttons-container">
+            <a class="up-arrow">
+              <img alt="up-arrow" src="./src/assets/icons/up-arrow.svg" />
+            </a>
+            <a class="down-arrow">
+              <img alt="down-arrow" src="./src/assets/icons/down-arrow.svg" />
+            </a>
+          </div> -->
+        </div>
+      </div> 
+    </div>
+      <div class="cart">
+        <h2>Cart: <span id="cart-count">0</span> items</h2>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+      </div>
+    </div>
+     </body>
 </html>
