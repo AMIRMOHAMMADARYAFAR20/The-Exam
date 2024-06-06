@@ -8,9 +8,9 @@ let data = [];
 
 async function getfoods(){
     const response = await fetch('http://localhost:3131/foods/');
-   const Data = await response.json();
+   const data = await response.json();
    
-   addData(Data);
+   addData(...data);
    }
 
    function addData(object) {
@@ -24,7 +24,7 @@ async function getfoods(){
 console.log(data); 
 
 
-const foodContainer = document.querySelector(".food-Container");
+const foodContainer = document.querySelector(".food-container");
 
 const html = `
          <div class="food-card">
@@ -34,7 +34,6 @@ const html = `
             src="./src/assets/img/pizza1.png"
             class="food-img"
           />
-          
           <div class="food-descriptions">
             <h4 class = "name">Italy Pizza</h4>
           <div class="food-price">
@@ -49,17 +48,17 @@ const html = `
           <span class="qty">1</span>
           <div class="buttons-container">
             <a class="up-arrow">
-              <img alt="up-arrow" src="./src/assets/icons/up-arrow.svg" />
+         <img alt="up-arrow" src="${arrowUp}" />
             </a>
             <a class="down-arrow">
-              <img alt="down-arrow" src="./src/assets/icons/down-arrow.svg" />
+        <img alt="down-arrow" src="${arrowDown}" />
             </a>
           </div> 
         </div>
       </div> 
 `;
 
-foodContainer.insertAdjacentElement("beforeend", html);
+foodContainer.insertAdjacentHTML("beforeend", html);
 
 
 
@@ -87,7 +86,7 @@ const renderFoodCards = (data) => {
     const foodContainer = document.querySelector(".food-container");
     foodContainer.innerHTML = "";
   
-    data.forEach((Data) => {
+    data.forEach((data) => {
        // Creating food card
       const card = document.createElement("div");
       card.className = "food-card";
