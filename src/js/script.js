@@ -24,7 +24,7 @@ async function getfoods(){
 console.log(data); 
 
 
-const foodContainer = document.querySelector(".foodContainer");
+const foodContainer = document.querySelector(".food-Container");
 
 const html = `
          <div class="food-card">
