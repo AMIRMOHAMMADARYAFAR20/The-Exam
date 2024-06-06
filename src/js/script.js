@@ -16,16 +16,16 @@ async function getfoods(){
    function addData(object) {
      data.push(object);
    }
-  
+
    
    getfoods();
    
   
-console.log(data); 
+console.log([data].name); 
 
 
 const foodContainer = document.querySelector(".food-container");
-
+const renderhtml = function(HTML){
 const html = `
          <div class="food-card">
         <div class="food-title">
@@ -59,7 +59,11 @@ const html = `
 `;
 
 foodContainer.insertAdjacentHTML("beforeend", html);
+};
 
+renderhtml();
+renderhtml();
+renderhtml();
 
 
 
