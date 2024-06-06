@@ -54,7 +54,9 @@ const html = `
             <a class="down-arrow">
               <img alt="down-arrow" src="./src/assets/icons/down-arrow.svg" />
             </a>
-          </div> -->
+          </div> 
+        </div>
+      </div> -->
 `
 
 foodContainer.insertAdjacentHtml("beforeend", html);
